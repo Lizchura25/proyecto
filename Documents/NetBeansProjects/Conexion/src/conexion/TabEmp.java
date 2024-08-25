@@ -99,7 +99,7 @@ private CONEXIONN conn;
 public void CargarDatos(){
         DefaultTableModel model=new DefaultTableModel();
         model.addColumn("CODIGO");
-        model.addColumn("NOMBRE");
+        model.addColumn("NOMBRES");
         model.addColumn("APELLIDOS");
         model.addColumn("DOCUMENTO");
         model.addColumn("TELEFONO");
