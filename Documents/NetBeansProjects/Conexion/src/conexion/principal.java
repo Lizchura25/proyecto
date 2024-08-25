@@ -32,19 +32,37 @@ public class principal extends javax.swing.JFrame {
 
         escritorio = new javax.swing.JDesktopPane();
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        Btn_Nuevo = new javax.swing.JButton();
+        btn_Agre = new javax.swing.JButton();
+        Btn_Imprimir = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        NomPro = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        CantPro = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
+        PreTot = new javax.swing.JTextField();
+        precio = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1_Usuario = new javax.swing.JMenu();
         mostarUsu = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JPopupMenu.Separator();
+        MItm_AgreUsu = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         mostrarCli = new javax.swing.JMenuItem();
+        AgreCli = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
         mostrarCat = new javax.swing.JMenuItem();
+        AgreCat = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         mostrarProd = new javax.swing.JMenuItem();
+        AgrePro = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         mostrarEmp = new javax.swing.JMenuItem();
+        AgreEmp = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
         mostrarVen = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
@@ -58,11 +76,56 @@ public class principal extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("COMPRAR");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, -1, -1));
+        Btn_Nuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/nuevo-producto.png"))); // NOI18N
+        Btn_Nuevo.setText("NUEVO");
+        Btn_Nuevo.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(Btn_Nuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 130, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Pictures\\portada,Miii.jpg")); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 390));
+        btn_Agre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/comercio-electronico.png"))); // NOI18N
+        btn_Agre.setText("AGREGAR");
+        btn_Agre.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(btn_Agre, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 90, -1, -1));
+
+        Btn_Imprimir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/impresora.png"))); // NOI18N
+        Btn_Imprimir.setText("IMPRIMIR");
+        Btn_Imprimir.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(Btn_Imprimir, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 170, -1, -1));
+
+        jTextField1.setBackground(new java.awt.Color(255, 204, 153));
+        jTextField1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jTextField1.setText("NOMBRE DEL PRODUCTO:");
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
+        jPanel1.add(NomPro, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, 120, -1));
+
+        jTextField3.setBackground(new java.awt.Color(255, 51, 0));
+        jTextField3.setFont(new java.awt.Font("Trebuchet MS", 3, 24)); // NOI18N
+        jTextField3.setText("LA CASERITA");
+        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 160, 30));
+
+        jTextField4.setBackground(new java.awt.Color(255, 204, 153));
+        jTextField4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jTextField4.setText("CANTIDAD:");
+        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
+        jPanel1.add(CantPro, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 70, -1));
+
+        jTextField6.setBackground(new java.awt.Color(255, 204, 153));
+        jTextField6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jTextField6.setText("PRECIO:");
+        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 90, 70, -1));
+
+        jTextField7.setBackground(new java.awt.Color(255, 204, 153));
+        jTextField7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jTextField7.setText("PRECIO TOTAL:");
+        jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 120, 100, -1));
+        jPanel1.add(PreTot, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 120, 100, -1));
+        jPanel1.add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, 70, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cajero (1).png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 270, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/portada,Miii.jpg"))); // NOI18N
+        jLabel2.setText("NOMBRE DEL PRODUCTO");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 450));
 
         escritorio.setLayer(jPanel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -70,19 +133,20 @@ public class principal extends javax.swing.JFrame {
         escritorio.setLayout(escritorioLayout);
         escritorioLayout.setHorizontalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(escritorioLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 636, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, escritorioLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 636, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         jMenu1_Usuario.setText("usuarios");
 
         mostarUsu.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.SHIFT_MASK));
+        mostarUsu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/trabajo-en-equipo.png"))); // NOI18N
         mostarUsu.setText("mostrar usuarios");
         mostarUsu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,6 +154,16 @@ public class principal extends javax.swing.JFrame {
             }
         });
         jMenu1_Usuario.add(mostarUsu);
+        jMenu1_Usuario.add(jSeparator1);
+
+        MItm_AgreUsu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/usuario.png"))); // NOI18N
+        MItm_AgreUsu.setText("Agregar Usuario");
+        MItm_AgreUsu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MItm_AgreUsuActionPerformed(evt);
+            }
+        });
+        jMenu1_Usuario.add(MItm_AgreUsu);
 
         jMenuBar1.add(jMenu1_Usuario);
 
@@ -104,6 +178,14 @@ public class principal extends javax.swing.JFrame {
         });
         jMenu2.add(mostrarCli);
 
+        AgreCli.setText("Agregar Cliente");
+        AgreCli.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AgreCliActionPerformed(evt);
+            }
+        });
+        jMenu2.add(AgreCli);
+
         jMenuBar1.add(jMenu2);
 
         jMenu1.setText("categoria");
@@ -116,6 +198,14 @@ public class principal extends javax.swing.JFrame {
             }
         });
         jMenu1.add(mostrarCat);
+
+        AgreCat.setText("Agregar Categoria");
+        AgreCat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AgreCatActionPerformed(evt);
+            }
+        });
+        jMenu1.add(AgreCat);
 
         jMenuBar1.add(jMenu1);
 
@@ -130,6 +220,14 @@ public class principal extends javax.swing.JFrame {
         });
         jMenu3.add(mostrarProd);
 
+        AgrePro.setText("Agregar Producto");
+        AgrePro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AgreProActionPerformed(evt);
+            }
+        });
+        jMenu3.add(AgrePro);
+
         jMenuBar1.add(jMenu3);
 
         jMenu4.setText("empleado");
@@ -142,6 +240,14 @@ public class principal extends javax.swing.JFrame {
             }
         });
         jMenu4.add(mostrarEmp);
+
+        AgreEmp.setText("Agregar empleado");
+        AgreEmp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AgreEmpActionPerformed(evt);
+            }
+        });
+        jMenu4.add(AgreEmp);
 
         jMenuBar1.add(jMenu4);
 
@@ -203,22 +309,18 @@ public class principal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(escritorio)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio)
+            .addComponent(escritorio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void mostarUsuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mostarUsuActionPerformed
-        // TODO add your handling code here:
-        TabUsu MostrarUsu = new TabUsu();
-        escritorio.add(MostrarUsu);
-        MostrarUsu.show();
-    }//GEN-LAST:event_mostarUsuActionPerformed
 
     private void mostrarCatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mostrarCatActionPerformed
         // TODO add your handling code here:
@@ -276,6 +378,49 @@ public class principal extends javax.swing.JFrame {
         MostrarDis.show();
     }//GEN-LAST:event_mostrarDisActionPerformed
 
+    private void AgreCliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgreCliActionPerformed
+        // TODO add your handling code here:
+        AgreCli AgregarCli = new AgreCli();
+        escritorio.add(AgregarCli);
+        AgregarCli.show();
+        
+    }//GEN-LAST:event_AgreCliActionPerformed
+
+    private void AgreCatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgreCatActionPerformed
+        // TODO add your handling code here:
+        AgreCat AgregarCat = new AgreCat();
+        escritorio.add(AgregarCat);
+        AgregarCat.show();
+    }//GEN-LAST:event_AgreCatActionPerformed
+
+    private void AgreEmpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgreEmpActionPerformed
+        // TODO add your handling code here:
+        AgreEmp AgregarEmp = new AgreEmp();
+        escritorio.add(AgregarEmp);
+        AgregarEmp.show();
+    }//GEN-LAST:event_AgreEmpActionPerformed
+
+    private void AgreProActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgreProActionPerformed
+        // TODO add your handling code here:
+        AgrePro AgregarPro = new AgrePro();
+        escritorio.add(AgregarPro);
+        AgregarPro.show();
+    }//GEN-LAST:event_AgreProActionPerformed
+
+    private void MItm_AgreUsuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MItm_AgreUsuActionPerformed
+        // TODO add your handling code here:
+        AgreUsu AgregarUsu = new AgreUsu();
+        escritorio.add(AgregarUsu);
+        AgregarUsu.show();
+    }//GEN-LAST:event_MItm_AgreUsuActionPerformed
+
+    private void mostarUsuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mostarUsuActionPerformed
+        // TODO add your handling code here:
+        TabUsu MostrarUsu = new TabUsu();
+        escritorio.add(MostrarUsu);
+        MostrarUsu.show();
+    }//GEN-LAST:event_mostarUsuActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -312,8 +457,19 @@ public class principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem AgreCat;
+    private javax.swing.JMenuItem AgreCli;
+    private javax.swing.JMenuItem AgreEmp;
+    private javax.swing.JMenuItem AgrePro;
+    private javax.swing.JButton Btn_Imprimir;
+    private javax.swing.JButton Btn_Nuevo;
+    private javax.swing.JTextField CantPro;
+    private javax.swing.JMenuItem MItm_AgreUsu;
+    private javax.swing.JTextField NomPro;
+    private javax.swing.JTextField PreTot;
+    private javax.swing.JButton btn_Agre;
     private javax.swing.JDesktopPane escritorio;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu1_Usuario;
@@ -326,6 +482,12 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu8;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
     private javax.swing.JMenuItem mostarUsu;
     private javax.swing.JMenuItem mostrarAlmp;
     private javax.swing.JMenuItem mostrarCat;
@@ -335,5 +497,6 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem mostrarEmp;
     private javax.swing.JMenuItem mostrarProd;
     private javax.swing.JMenuItem mostrarVen;
+    private javax.swing.JTextField precio;
     // End of variables declaration//GEN-END:variables
 }
