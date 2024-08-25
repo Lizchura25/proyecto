@@ -65,31 +65,38 @@ public class principal extends javax.swing.JFrame {
         AgreEmp = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
         mostrarVen = new javax.swing.JMenuItem();
+        Agre_ven = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
         mostrarDv = new javax.swing.JMenuItem();
+        agre_dv = new javax.swing.JMenuItem();
         jMenu7 = new javax.swing.JMenu();
         mostrarAlmp = new javax.swing.JMenuItem();
+        agre_ap = new javax.swing.JMenuItem();
         jMenu8 = new javax.swing.JMenu();
         mostrarDis = new javax.swing.JMenuItem();
+        agredist = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        Btn_Nuevo.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 14)); // NOI18N
         Btn_Nuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/nuevo-producto.png"))); // NOI18N
-        Btn_Nuevo.setText("NUEVO");
+        Btn_Nuevo.setText("Nuevo");
         Btn_Nuevo.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(Btn_Nuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 130, -1, -1));
+        jPanel1.add(Btn_Nuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 130, 90, -1));
 
+        btn_Agre.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 14)); // NOI18N
         btn_Agre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/comercio-electronico.png"))); // NOI18N
-        btn_Agre.setText("AGREGAR");
+        btn_Agre.setText("Agregar");
         btn_Agre.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(btn_Agre, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 90, -1, -1));
+        jPanel1.add(btn_Agre, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 90, 90, -1));
 
+        Btn_Imprimir.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 14)); // NOI18N
         Btn_Imprimir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/impresora.png"))); // NOI18N
-        Btn_Imprimir.setText("IMPRIMIR");
+        Btn_Imprimir.setText("Imprimir");
         Btn_Imprimir.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(Btn_Imprimir, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 170, -1, -1));
+        jPanel1.add(Btn_Imprimir, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, 100, -1));
 
         jTextField1.setBackground(new java.awt.Color(255, 204, 153));
         jTextField1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -98,9 +105,9 @@ public class principal extends javax.swing.JFrame {
         jPanel1.add(NomPro, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, 120, -1));
 
         jTextField3.setBackground(new java.awt.Color(255, 51, 0));
-        jTextField3.setFont(new java.awt.Font("Trebuchet MS", 3, 24)); // NOI18N
+        jTextField3.setFont(new java.awt.Font("Cambria Math", 3, 24)); // NOI18N
         jTextField3.setText("LA CASERITA");
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 160, 30));
+        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 170, 30));
 
         jTextField4.setBackground(new java.awt.Color(255, 204, 153));
         jTextField4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -170,6 +177,7 @@ public class principal extends javax.swing.JFrame {
         jMenu2.setText("cliente");
 
         mostrarCli.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.SHIFT_MASK));
+        mostrarCli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/trabajo-en-equipo.png"))); // NOI18N
         mostrarCli.setText("mostrar cliente");
         mostrarCli.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,6 +186,7 @@ public class principal extends javax.swing.JFrame {
         });
         jMenu2.add(mostrarCli);
 
+        AgreCli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/usuario.png"))); // NOI18N
         AgreCli.setText("Agregar Cliente");
         AgreCli.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -220,6 +229,7 @@ public class principal extends javax.swing.JFrame {
         });
         jMenu3.add(mostrarProd);
 
+        AgrePro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/agregar-producto.png"))); // NOI18N
         AgrePro.setText("Agregar Producto");
         AgrePro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -233,6 +243,7 @@ public class principal extends javax.swing.JFrame {
         jMenu4.setText("empleado");
 
         mostrarEmp.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.SHIFT_MASK));
+        mostrarEmp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/trabajo-en-equipo.png"))); // NOI18N
         mostrarEmp.setText("mostrar empleado");
         mostrarEmp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -241,6 +252,7 @@ public class principal extends javax.swing.JFrame {
         });
         jMenu4.add(mostrarEmp);
 
+        AgreEmp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/usuario.png"))); // NOI18N
         AgreEmp.setText("Agregar empleado");
         AgreEmp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -262,6 +274,15 @@ public class principal extends javax.swing.JFrame {
         });
         jMenu5.add(mostrarVen);
 
+        Agre_ven.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.SHIFT_MASK));
+        Agre_ven.setText("agregar ventas");
+        Agre_ven.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Agre_venActionPerformed(evt);
+            }
+        });
+        jMenu5.add(Agre_ven);
+
         jMenuBar1.add(jMenu5);
 
         jMenu6.setText("detalle_venta");
@@ -274,6 +295,15 @@ public class principal extends javax.swing.JFrame {
             }
         });
         jMenu6.add(mostrarDv);
+
+        agre_dv.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.SHIFT_MASK));
+        agre_dv.setText("agregar detalle_venta");
+        agre_dv.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                agre_dvActionPerformed(evt);
+            }
+        });
+        jMenu6.add(agre_dv);
 
         jMenuBar1.add(jMenu6);
 
@@ -288,6 +318,15 @@ public class principal extends javax.swing.JFrame {
         });
         jMenu7.add(mostrarAlmp);
 
+        agre_ap.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.SHIFT_MASK));
+        agre_ap.setText("agregar almacen_productos");
+        agre_ap.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                agre_apActionPerformed(evt);
+            }
+        });
+        jMenu7.add(agre_ap);
+
         jMenuBar1.add(jMenu7);
 
         jMenu8.setText("distribuidor");
@@ -300,6 +339,14 @@ public class principal extends javax.swing.JFrame {
             }
         });
         jMenu8.add(mostrarDis);
+
+        agredist.setText("agregar distribuidor");
+        agredist.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                agredistActionPerformed(evt);
+            }
+        });
+        jMenu8.add(agredist);
 
         jMenuBar1.add(jMenu8);
 
@@ -421,6 +468,34 @@ public class principal extends javax.swing.JFrame {
         MostrarUsu.show();
     }//GEN-LAST:event_mostarUsuActionPerformed
 
+    private void agredistActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agredistActionPerformed
+        // TODO add your handling code here:
+        AgreDis Agredist = new AgreDis();
+        escritorio.add(Agredist);
+        Agredist.show();
+    }//GEN-LAST:event_agredistActionPerformed
+
+    private void agre_apActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agre_apActionPerformed
+        // TODO add your handling code here:
+        AgreAlmPro Agreprod = new AgreAlmPro();
+        escritorio.add(Agreprod);
+        Agreprod.show();
+    }//GEN-LAST:event_agre_apActionPerformed
+
+    private void agre_dvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agre_dvActionPerformed
+        // TODO add your handling code here:
+        AgreDV Agredvt = new AgreDV();
+        escritorio.add(Agredvt);
+        Agredvt.show();
+    }//GEN-LAST:event_agre_dvActionPerformed
+
+    private void Agre_venActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Agre_venActionPerformed
+        // TODO add your handling code here:
+        AgreVen Agrevta = new AgreVen();
+        escritorio.add(Agrevta);
+        Agrevta.show();
+    }//GEN-LAST:event_Agre_venActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -447,6 +522,7 @@ public class principal extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -461,12 +537,16 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem AgreCli;
     private javax.swing.JMenuItem AgreEmp;
     private javax.swing.JMenuItem AgrePro;
+    private javax.swing.JMenuItem Agre_ven;
     private javax.swing.JButton Btn_Imprimir;
     private javax.swing.JButton Btn_Nuevo;
     private javax.swing.JTextField CantPro;
     private javax.swing.JMenuItem MItm_AgreUsu;
     private javax.swing.JTextField NomPro;
     private javax.swing.JTextField PreTot;
+    private javax.swing.JMenuItem agre_ap;
+    private javax.swing.JMenuItem agre_dv;
+    private javax.swing.JMenuItem agredist;
     private javax.swing.JButton btn_Agre;
     private javax.swing.JDesktopPane escritorio;
     private javax.swing.JLabel jLabel1;
