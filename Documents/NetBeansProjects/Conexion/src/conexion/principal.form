@@ -49,7 +49,7 @@
                   <KeyStroke key="Shift+ENTER"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagenes/trabajo-en-equipo.png"/>
+                  <Image iconType="3" name="/imagenes/hombre.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="mostrar cliente"/>
               </Properties>
@@ -80,6 +80,9 @@
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Shift+ENTER"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagenes/categorias.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="mostrar categoria"/>
               </Properties>
               <Events>
@@ -88,6 +91,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="AgreCat">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagenes/agregar-aplicaciones.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Agregar Categoria"/>
               </Properties>
               <Events>
@@ -105,6 +111,9 @@
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Shift+ENTER"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagenes/agregar-producto_1.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="mostrar producto"/>
               </Properties>
@@ -136,7 +145,7 @@
                   <KeyStroke key="Shift+ENTER"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagenes/trabajo-en-equipo.png"/>
+                  <Image iconType="3" name="/imagenes/humano.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="mostrar empleado"/>
               </Properties>
@@ -167,6 +176,9 @@
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Shift+ENTER"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagenes/compras.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="mostrar ventas"/>
               </Properties>
               <Events>
@@ -177,6 +189,9 @@
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Shift+ENTER"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagenes/comercio-electronico.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="agregar ventas"/>
               </Properties>
@@ -196,6 +211,9 @@
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Shift+ENTER"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagenes/curriculum.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="mostrar detalle_venta"/>
               </Properties>
               <Events>
@@ -206,6 +224,9 @@
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Shift+ENTER"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagenes/anadir-al-carrito.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="agregar detalle_venta"/>
               </Properties>
@@ -225,6 +246,9 @@
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Shift+ENTER"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagenes/entrega.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="mostrar almacen_productos"/>
               </Properties>
               <Events>
@@ -235,6 +259,9 @@
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Shift+ENTER"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagenes/agregar-producto_1.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="agregar almacen_productos"/>
               </Properties>
@@ -254,6 +281,9 @@
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Shift+ENTER"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagenes/entrega.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="mostrar distribuidor"/>
               </Properties>
               <Events>
@@ -262,6 +292,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="agredist">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagenes/expediente.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="agregar distribuidor"/>
               </Properties>
               <Events>

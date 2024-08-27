@@ -31,12 +31,19 @@ private CONEXIONN conn;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        table_Cli = new javax.swing.JTable();
-        btn_Usuario = new javax.swing.JButton();
+        table_AlmPro = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
+        btn_TabAlmPro = new javax.swing.JButton();
+        btn_Usuario1 = new javax.swing.JButton();
+        btn_salir = new javax.swing.JButton();
 
-        table_Cli.setModel(new javax.swing.table.DefaultTableModel(
+        jPanel1.setBackground(new java.awt.Color(255, 153, 102));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        table_AlmPro.setBackground(new java.awt.Color(255, 255, 204));
+        table_AlmPro.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -47,56 +54,77 @@ private CONEXIONN conn;
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(table_Cli);
+        jScrollPane1.setViewportView(table_AlmPro);
 
-        btn_Usuario.setText("CARGAR DATOS");
-        btn_Usuario.addActionListener(new java.awt.event.ActionListener() {
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 345, 160));
+
+        jLabel1.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 18)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/agregar-producto.png"))); // NOI18N
+        jLabel1.setText("Tabla almacen de productos");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, -1));
+
+        btn_TabAlmPro.setBackground(new java.awt.Color(153, 255, 255));
+        btn_TabAlmPro.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btn_TabAlmPro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/carga-en-la-nube.png"))); // NOI18N
+        btn_TabAlmPro.setText("CARGAR DATOS");
+        btn_TabAlmPro.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn_TabAlmPro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_UsuarioActionPerformed(evt);
+                btn_TabAlmProActionPerformed(evt);
             }
         });
+        jPanel1.add(btn_TabAlmPro, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 230, -1, -1));
 
-        jLabel1.setText("almacen de productos");
+        btn_Usuario1.setBackground(new java.awt.Color(0, 153, 102));
+        btn_Usuario1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btn_Usuario1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/actualizar.png"))); // NOI18N
+        btn_Usuario1.setText("ACTUALIZAR");
+        btn_Usuario1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn_Usuario1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_Usuario1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_Usuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, -1, -1));
+
+        btn_salir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/boton.png"))); // NOI18N
+        btn_salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_salirActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 10, 23, 23));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(162, 162, 162)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(58, 58, 58)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btn_Usuario)
-                .addGap(126, 126, 126))
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btn_Usuario)
-                .addContainerGap(50, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 313, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btn_UsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_UsuarioActionPerformed
+    private void btn_TabAlmProActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_TabAlmProActionPerformed
         // TODO add your handling code here:
         conn =new CONEXIONN();
         CargarDatos();
-    }//GEN-LAST:event_btn_UsuarioActionPerformed
-public void CargarDatos(){
+       
+    }//GEN-LAST:event_btn_TabAlmProActionPerformed
+
+    private void btn_Usuario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Usuario1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_Usuario1ActionPerformed
+
+    private void btn_salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salirActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_btn_salirActionPerformed
+   public void CargarDatos(){
         DefaultTableModel model=new DefaultTableModel();
         model.addColumn("CODIGO");
         model.addColumn("FECHA INICIO");
@@ -113,16 +141,19 @@ public void CargarDatos(){
                 rs.getString("CodDis"),
             });
             }
-             table_Cli.setModel(model);
+             table_AlmPro.setModel(model);
         }catch(SQLException ex){
            ex.printStackTrace();
         }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_Usuario;
+    private javax.swing.JButton btn_TabAlmPro;
+    private javax.swing.JButton btn_Usuario1;
+    private javax.swing.JButton btn_salir;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable table_Cli;
+    private javax.swing.JTable table_AlmPro;
     // End of variables declaration//GEN-END:variables
 }

@@ -177,7 +177,7 @@ public class principal extends javax.swing.JFrame {
         jMenu2.setText("cliente");
 
         mostrarCli.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.SHIFT_MASK));
-        mostrarCli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/trabajo-en-equipo.png"))); // NOI18N
+        mostrarCli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/hombre.png"))); // NOI18N
         mostrarCli.setText("mostrar cliente");
         mostrarCli.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -200,6 +200,7 @@ public class principal extends javax.swing.JFrame {
         jMenu1.setText("categoria");
 
         mostrarCat.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.SHIFT_MASK));
+        mostrarCat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/categorias.png"))); // NOI18N
         mostrarCat.setText("mostrar categoria");
         mostrarCat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -208,6 +209,7 @@ public class principal extends javax.swing.JFrame {
         });
         jMenu1.add(mostrarCat);
 
+        AgreCat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/agregar-aplicaciones.png"))); // NOI18N
         AgreCat.setText("Agregar Categoria");
         AgreCat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -221,6 +223,7 @@ public class principal extends javax.swing.JFrame {
         jMenu3.setText("producto");
 
         mostrarProd.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.SHIFT_MASK));
+        mostrarProd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/agregar-producto_1.png"))); // NOI18N
         mostrarProd.setText("mostrar producto");
         mostrarProd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -243,7 +246,7 @@ public class principal extends javax.swing.JFrame {
         jMenu4.setText("empleado");
 
         mostrarEmp.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.SHIFT_MASK));
-        mostrarEmp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/trabajo-en-equipo.png"))); // NOI18N
+        mostrarEmp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/humano.png"))); // NOI18N
         mostrarEmp.setText("mostrar empleado");
         mostrarEmp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -266,6 +269,7 @@ public class principal extends javax.swing.JFrame {
         jMenu5.setText("ventas");
 
         mostrarVen.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.SHIFT_MASK));
+        mostrarVen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/compras.png"))); // NOI18N
         mostrarVen.setText("mostrar ventas");
         mostrarVen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -275,6 +279,7 @@ public class principal extends javax.swing.JFrame {
         jMenu5.add(mostrarVen);
 
         Agre_ven.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.SHIFT_MASK));
+        Agre_ven.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/comercio-electronico.png"))); // NOI18N
         Agre_ven.setText("agregar ventas");
         Agre_ven.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -288,6 +293,7 @@ public class principal extends javax.swing.JFrame {
         jMenu6.setText("detalle_venta");
 
         mostrarDv.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.SHIFT_MASK));
+        mostrarDv.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/curriculum.png"))); // NOI18N
         mostrarDv.setText("mostrar detalle_venta");
         mostrarDv.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -297,6 +303,7 @@ public class principal extends javax.swing.JFrame {
         jMenu6.add(mostrarDv);
 
         agre_dv.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.SHIFT_MASK));
+        agre_dv.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/anadir-al-carrito.png"))); // NOI18N
         agre_dv.setText("agregar detalle_venta");
         agre_dv.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -310,6 +317,7 @@ public class principal extends javax.swing.JFrame {
         jMenu7.setText("almacen_productos");
 
         mostrarAlmp.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.SHIFT_MASK));
+        mostrarAlmp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/entrega.png"))); // NOI18N
         mostrarAlmp.setText("mostrar almacen_productos");
         mostrarAlmp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -319,6 +327,7 @@ public class principal extends javax.swing.JFrame {
         jMenu7.add(mostrarAlmp);
 
         agre_ap.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.SHIFT_MASK));
+        agre_ap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/agregar-producto_1.png"))); // NOI18N
         agre_ap.setText("agregar almacen_productos");
         agre_ap.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -332,6 +341,7 @@ public class principal extends javax.swing.JFrame {
         jMenu8.setText("distribuidor");
 
         mostrarDis.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.SHIFT_MASK));
+        mostrarDis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/entrega.png"))); // NOI18N
         mostrarDis.setText("mostrar distribuidor");
         mostrarDis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -340,6 +350,7 @@ public class principal extends javax.swing.JFrame {
         });
         jMenu8.add(mostrarDis);
 
+        agredist.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/expediente.png"))); // NOI18N
         agredist.setText("agregar distribuidor");
         agredist.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
